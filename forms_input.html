@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ساخت فرم</title>
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #344a72;
+    color: #fff ;
+    line-height: 1.8;
+  }
+</style>
+<body>
+  <div id="container">
+    <div class="form-wrap">
+      <h1>sign up</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+ 
+  <form action="process.php">
+    <div>
+      <!-- مشخصات-->
+      <label for="name">نام</label><br>
+      <input type="text" id="name" name="name" value="حسن">
+    </div><br>
+    <!-- ایمیل -->
+    <label for="email">ایمیل</label><br>
+    <input type="text" id="email" name="email" placeholder="ایمیل خود را وارد کنید">
+    <div><br>
+      <!-- ارسال پیام -->
+      <label for="message">ارسال پیام</label><br>
+      <textarea name="message" id="" cols="50" rows="10" placeholder="لطفا نظرات خود را ارسال فرمایید"></textarea>
+    </div><br>
+    <!-- جنسیت -->
+    <div>
+      <label for="جنسیت">جنسیت</label>
+      <select name="جنسیت" id="جنسیت">
+        <option value="مذکرِ " selected>مذکر </option>
+        <option value="مونث">مونث</option>
+        <option value="سایر">سایر</option>
+      </select>
+      <div><br>
+        <!-- سن -->
+        <div>
+          <label for="age">سن</label><br>
+          <input type="number" name="age" id="age">
+        </div><br>
+        <!-- تاریخ تولد -->
+        <div>
+          <label for="تاریخ تولد">تاریخ تولد</label><br>
+          <input type="date" name="تاریخ تولد" id="تاریخ تولد" >
+        </div><br>
+        <!-- عضویت -->
+        <div>
+          <label for="membership">نوع عضویت</label>
+          <input type="radio" name="membership" value="simple" id="membership"> کاربر   
+          <input type="radio" name="membership" value="standard" id="membership">  کارشناس 
+          <input type="radio" name="membership" value="super" id="membership">   مدیر
+        </div><br>
+        <!-- علاقه مندی ها -->
+        <div>
+          <label for="membership">علاقه مندی ها</label>
+          <input type="checkbox" name="علاقه مندی ها" value="standard" id="membership" checked>  ساده 
+          <input type="checkbox" name="علاقه مندی ها" value="simple" id="membership"> کلاسیک   
+          <input type="checkbox" name="علاقه مندی ها" value="super" id="membership">   طعم دار
+        </div><br>
+        <!-- تایید کردن -->
+        <!-- <input type="تایید " value=" تایید کردن"> -->
+        <button type="submit"> تایید کردن</button>
+        <button type="reset">پاک کردن</button>
+  </form>
+</body>
+</html>
